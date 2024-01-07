@@ -32,8 +32,8 @@ Editing Methods:
  - audio  ; Audio silence/loudness detection
     - threshold threshold? : 4%
     - stream (or/c nat? 'all "all") : 0
-    - mincut nat? : 6
-    - minclip nat? : 3
+    - mincut nat? : 6 ; This excludes any clips that are of a length less than the value provided.
+    - minclip nat? : 3 ; This extends the length of any clip under the given value to the given value.
 
  - motion  ; Motion detection specialized for noisy real-life videos
     - threshold threshold? : 2%
